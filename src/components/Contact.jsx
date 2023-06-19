@@ -43,7 +43,7 @@ export default function Contact() {
                     <img
                         style={{ height: "15rem", width: "100%", objectFit: "cover", objectPosition: "top" }}
                         src={tharana}
-                        title="Tharana"
+                        title="Tharana Wanigaratne"
                     />
                     <CardContent>
                         <Typography gutterBottom color="primary" variant="h5" component="h5" fontWeight="bold">
@@ -94,7 +94,7 @@ export default function Contact() {
                     <img
                         style={{ height: "15rem", width: "100%", objectFit: "cover", objectPosition: "50% 15%" }}
                         src={sanuda}
-                        title="Sanuda"
+                        title="Sanuda Kannangara"
                     />
                     <CardContent>
                         <Typography gutterBottom color="primary" variant="h5" component="h5" fontWeight="bold">
@@ -142,7 +142,7 @@ export default function Contact() {
                     <img
                         style={{ height: "15rem", width: "100%", objectFit: "cover", objectPosition: "50% 45%" }}
                         src={amirah}
-                        title="Amirah"
+                        title="Amirah Razmin"
                     />
                     <CardContent>
                         <Typography gutterBottom color="primary" variant="h5" component="h5" fontWeight="bold">
@@ -157,7 +157,7 @@ export default function Contact() {
                                         <Person fontSize="large" color="primary" />
                                     </TableCell>
                                     <TableCell align="right">
-                                        Amirah Razmin
+                                        Amirah Rasmin
                                     </TableCell>
                                 </TableRow>
                                 <TableRow>
@@ -189,7 +189,7 @@ export default function Contact() {
                     <img
                         style={{ height: "15rem", width: "100%", objectFit: "cover", objectPosition: "top" }}
                         src={budwin}
-                        title="Budwin"
+                        title="Budwin De Saram"
                     />
                     <CardContent>
                         <Typography gutterBottom color="primary" variant="h5" component="h5" fontWeight="bold">
@@ -236,7 +236,7 @@ export default function Contact() {
                     <img
                         style={{ height: "15rem", width: "100%", objectFit: "cover", objectPosition: "top" }}
                         src={lahiru}
-                        title="Lahiru"
+                        title="Lahiru Viraj"
                     />
                     <CardContent>
                         <Typography gutterBottom color="primary" variant="h5" component="h5" fontWeight="bold">
@@ -283,7 +283,7 @@ export default function Contact() {
                     <img
                         style={{ height: "15rem", width: "100%", objectFit: "cover", objectPosition: "top" }}
                         src={ishan}
-                        title="Ishan"
+                        title="Ishan Emalsha"
                     />
                     <CardContent>
                         <Typography gutterBottom color="primary" variant="h5" component="h5" fontWeight="bold">
@@ -330,7 +330,7 @@ export default function Contact() {
                     <img
                         style={{ height: "15rem", width: "100%", objectFit: "cover", objectPosition: "top" }}
                         src={lahini}
-                        title="Lahini"
+                        title="Lahini Balasooriya"
                     />
                     <CardContent>
                         <Typography gutterBottom color="primary" variant="h5" component="h5" fontWeight="bold">

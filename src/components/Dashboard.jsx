@@ -100,7 +100,7 @@ export default function Dashboard() {
                     setValue(newValue);
                 }}
                 sx={{
-                    padding: "1rem",
+                    padding: "0.5rem",
                     borderRadius: "1rem",
                     bgcolor: "secondary.main",
                     position: "fixed",
@@ -108,7 +108,7 @@ export default function Dashboard() {
                     left: "0",
                     right: "0",
                     margin: "0 auto",
-                    marginBottom: "5rem",
+                    marginBottom: "1rem",
                     width: "fit-content",
                     zIndex: "100",
                     display: {

@@ -35,6 +35,8 @@ export default function Guidelines() {
                 display: "flex",
                 flexWrap: "wrap",
                 justifyContent: "center",
+                width: "100%",
+                gap: "8rem",
                 alignItems: "center",
             }}>
                 <Box sx={{

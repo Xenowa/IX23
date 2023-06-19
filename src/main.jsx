@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-// Loading Fonts
-import "@fontsource/chakra-petch"
+// Loading <Fonts></Fonts>
+import "@fontsource/poppins"
 
 // Creating a custom theme
 const darkTheme = createTheme({
@@ -23,7 +23,7 @@ const darkTheme = createTheme({
 
   // Custom font sizes
   typography: {
-    fontFamily: ["Chakra Petch", "sans-serif"].join(","),
+    fontFamily: ["poppins", "sans-serif"].join(","),
     h1: {
       fontSize: "32px"
     },

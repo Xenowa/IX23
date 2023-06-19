@@ -23,14 +23,15 @@ export default function Home() {
             justifyContent: "center",
             alignItems: "center",
         }} id="home">
-            <ReactParticles />
 
+            <ReactParticles />
             <img
                 src={IXIcon} alt="Logo"
                 style={{
                     maxWidth: matches ? "20rem" : "10rem",
                     objectFit: "contain",
-                    marginBottom: "3rem"
+                    marginBottom: "3rem",
+                    zIndex: "2"
                 }}
             />
             <Typography
@@ -39,7 +40,8 @@ export default function Home() {
                 textAlign="center"
                 sx={{
                     fontStyle: "italic",
-                    marginBottom: "3rem"
+                    marginBottom: "3rem",
+                    zIndex: "2"
                 }}
             >
                 "Unravelling Visions beyond Tradition"

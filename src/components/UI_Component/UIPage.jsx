@@ -13,6 +13,7 @@ export default function UIPage() {
     return (
         <Box sx={{
             bgcolor: "secondary.main",
+            width: "20rem",
             margin: "2rem 0",
             order: {
                 xs: "1",
