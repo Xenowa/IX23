@@ -35,13 +35,12 @@ export default function Guidelines() {
                 display: "flex",
                 flexWrap: "wrap",
                 justifyContent: "center",
-                width: "100%",
-                gap: "8rem",
+                maxWidth: "70rem",
                 alignItems: "center",
+                gap: "1rem"
             }}>
                 <Box sx={{
-                    maxWidth: "35rem",
-                    margin: "0 2rem",
+                    maxWidth: "45rem",
                     order: {
                         xs: "2",
                         md: "1"

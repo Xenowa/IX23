@@ -28,15 +28,15 @@ export default function Home() {
             <img
                 src={IXIcon} alt="Logo"
                 style={{
-                    maxWidth: matches ? "20rem" : "10rem",
+                    maxWidth: matches ? "14rem" : "10rem",
                     objectFit: "contain",
                     marginBottom: "3rem",
                     zIndex: "2"
                 }}
             />
             <Typography
-                component="h3"
-                variant="h3"
+                component="h4"
+                variant="h4"
                 textAlign="center"
                 sx={{
                     fontStyle: "italic",

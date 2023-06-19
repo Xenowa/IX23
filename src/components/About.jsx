@@ -27,7 +27,15 @@ export default function About() {
                 About <Typography color="primary" component="span" variant="span">IX 23</Typography>
             </Typography>
 
-            <Box sx={{ display: "flex", flexWrap: "wrap", gap: "1rem", alignItems: "center", justifyContent: "center" }} >
+            <Box sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "1rem",
+                alignItems: "center",
+                justifyContent: "center",
+                maxWidth: "70rem",
+                margin: "0 auto"
+            }} >
                 <iframe
                     style={{ borderRadius: "1rem", width: matches ? "25rem" : "100%", height: "35rem", border: "1px solid var(--primary)", pointerEvents: "none" }}
                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FTSJhXfZDrLKfYTr8jLwIaM%2FIX-23-Website%3Ftype%3Ddesign%26node-id%3D0%253A1%26t%3DcIolwqXDdsha2iG9-1"
@@ -39,7 +47,6 @@ export default function About() {
                     sx={{
                         bgcolor: "secondaryLight.main",
                         padding: "2rem",
-                        margin: "0 2rem",
                         maxWidth: "35rem",
                         borderRadius: "0.5rem",
                         textAlign: "justify"

@@ -197,7 +197,7 @@ export default function ReactParticles() {
                             {
                                 fill: true,
                                 font: "Verdana",
-                                value: ["💦", "🍆", "💚"],
+                                value: ["🖤", "💚"],
                                 style: "",
                                 weight: 400
                             }
