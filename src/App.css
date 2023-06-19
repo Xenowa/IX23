@@ -1,0 +1,43 @@
+:root {
+  --primary: #aeeb40;
+  --Secondary: #101010;
+  --SecondaryLight: #212121;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--Secondary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border: 1px solid var(--Secondary);
+  border-radius: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  background: #000000;
+  color: #ffffff;
+}
+
+#tsparticles {
+  height: 100%;
+  position: absolute;
+}
