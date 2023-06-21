@@ -22,6 +22,8 @@ export default function Dashboard() {
         setMobileOpen(!mobileOpen);
     };
 
+    const desktopNavDividerColor = "#2e3b15";
+
     return (
         <Box component="nav">
             <Fab
@@ -93,6 +95,7 @@ export default function Dashboard() {
             </BottomNavigation>
 
             {/* Desktop Navigation */}
+            {/* bgcolor: "secondary.main", */}
             <BottomNavigation
                 showLabels
                 value={value}
@@ -102,7 +105,7 @@ export default function Dashboard() {
                 sx={{
                     padding: "0.5rem",
                     borderRadius: "1rem",
-                    bgcolor: "secondary.main",
+                    bgcolor: "#00000050",
                     position: "fixed",
                     bottom: "0",
                     left: "0",
@@ -114,24 +117,26 @@ export default function Dashboard() {
                     display: {
                         xs: "none",
                         md: "flex"
-                    }
+                    },
+                    border: "1px solid #1a2407",
+                    backdropFilter: "blur(10px)"
                 }}
             >
 
                 <BottomNavigationAction LinkComponent="a" href="#home" label="Home" icon={<HomeIcon />} />
-                <Divider orientation="vertical" sx={{ bgcolor: "primary.main" }} />
+                <Divider orientation="vertical" sx={{ bgcolor: desktopNavDividerColor }} />
                 <BottomNavigationAction LinkComponent="a" href="#about" label="About" icon={<DrawIcon />} />
-                <Divider orientation="vertical" sx={{ bgcolor: "primary.main" }} />
+                <Divider orientation="vertical" sx={{ bgcolor: desktopNavDividerColor }} />
                 <BottomNavigationAction LinkComponent="a" href="#guidelines" label="Guidelines" icon={<ArticleIcon />} />
-                <Divider orientation="vertical" sx={{ bgcolor: "primary.main" }} />
+                <Divider orientation="vertical" sx={{ bgcolor: desktopNavDividerColor }} />
                 <BottomNavigationAction LinkComponent="a" href="#schedule" label="Schedule" icon={<TimelineIcon />} />
-                <Divider orientation="vertical" sx={{ bgcolor: "primary.main" }} />
+                <Divider orientation="vertical" sx={{ bgcolor: desktopNavDividerColor }} />
                 <BottomNavigationAction LinkComponent="a" href="#awards" label="Awards" icon={<EmojiEventsIcon />} />
-                <Divider orientation="vertical" sx={{ bgcolor: "primary.main" }} />
+                <Divider orientation="vertical" sx={{ bgcolor: desktopNavDividerColor }} />
                 <BottomNavigationAction LinkComponent="a" href="#partners" label="Partners" icon={<GroupsIcon />} />
-                <Divider orientation="vertical" sx={{ bgcolor: "primary.main" }} />
+                <Divider orientation="vertical" sx={{ bgcolor: desktopNavDividerColor }} />
                 <BottomNavigationAction LinkComponent="a" href="#register" label="Register" icon={<SendIcon />} />
-                <Divider orientation="vertical" sx={{ bgcolor: "primary.main" }} />
+                <Divider orientation="vertical" sx={{ bgcolor: desktopNavDividerColor }} />
                 <BottomNavigationAction LinkComponent="a" href="#contact" label="Contact" icon={<PermPhoneMsgIcon />} />
             </BottomNavigation>
         </Box>
