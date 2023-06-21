@@ -48,7 +48,10 @@ export default function Home() {
             </Typography>
             <Button
                 component="a"
-                sx={{ fontSize: "20px" }}
+                sx={{ 
+                    fontSize: "20px",
+                    backdropFilter: "blur(10px)"
+                }}
                 variant="outlined"
                 color="primary"
                 href="#register">
