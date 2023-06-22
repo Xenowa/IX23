@@ -119,7 +119,8 @@ export default function Dashboard() {
                         md: "flex"
                     },
                     border: "1px solid #1a2407",
-                    backdropFilter: "blur(10px)"
+                    backdropFilter: "blur(10px)",
+                    boxShadow: "0 2px 5px rgba(0, 0, 0, 70%)",
                 }}
             >
 
