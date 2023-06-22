@@ -16,9 +16,22 @@ import budwin from "../assets/Budwin.jpg"
 import lahiru from "../assets/Lahiru.jpg"
 import ishan from "../assets/Ishan.jpg"
 import lahini from "../assets/Lahini.jpg"
+import { useContext, useEffect, useState } from "react";
+import useElementVisibility from "../hooks/ElementVisibility";
+import VisibilityContext from "../context/Visibility";
 
 export default function Contact() {
+    // Set visible element context
+    const [isVisible, setIsVisible] = useState();
+    const [containerRef] = useElementVisibility(setIsVisible);
+    const {setVisibleElement} = useContext(VisibilityContext);
+
+    useEffect(() => {
+        if (isVisible) setVisibleElement("contact");
+    }, [isVisible])
+
     return (
+        <div ref={containerRef}>
         <Box sx={{
             minHeight: "100vh",
             display: "flex",
@@ -370,5 +383,6 @@ export default function Contact() {
                 </Card>
             </Box>
         </Box>
+        </div>
     )
 }

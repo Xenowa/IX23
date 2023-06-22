@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import MenuIcon from '@mui/icons-material/Menu';
-import { useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import HomeIcon from '@mui/icons-material/Home';
 import DrawIcon from '@mui/icons-material/Draw';
 import ArticleIcon from '@mui/icons-material/Article';
@@ -13,6 +13,7 @@ import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Fab from "@mui/material/Fab"
+import VisibilityContext from '../context/Visibility';
 
 export default function Dashboard() {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -21,6 +22,19 @@ export default function Dashboard() {
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
+
+    const {visibleElement} = useContext(VisibilityContext);
+
+    useEffect(() => {
+        if (visibleElement == "home") setValue(0);
+        else if (visibleElement == "about") setValue(2);
+        else if (visibleElement == "guidelines") setValue(4);
+        else if (visibleElement == "schedule") setValue(6);
+        else if (visibleElement == "awards") setValue(8);
+        else if (visibleElement == "partners") setValue(10);
+        else if (visibleElement == "register") setValue(12);
+        else if (visibleElement == "contact") setValue(14);
+    }, [visibleElement])
 
     const desktopNavDividerColor = "#2e3b15";
 

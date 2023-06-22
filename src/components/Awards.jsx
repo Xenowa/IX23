@@ -8,8 +8,20 @@ import secondplace from "../assets/second place.jpg"
 import thirdplace from "../assets/third place.jpg"
 import ixbackground from "../assets/IX-bg.jpg"
 import placeholder from "../assets/placeholder.jpg"
+import { useContext, useEffect, useState } from "react";
+import useElementVisibility from "../hooks/ElementVisibility";
+import VisibilityContext from "../context/Visibility";
 
 export default function Awards() {
+    // Set visible element context
+    const [isVisible, setIsVisible] = useState();
+    const [containerRef] = useElementVisibility(setIsVisible);
+    const {setVisibleElement} = useContext(VisibilityContext);
+
+    useEffect(() => {
+        if (isVisible) setVisibleElement("awards");
+    }, [isVisible])
+
     return (
         <Box sx={{
             minHeight: "100vh",
@@ -20,8 +32,9 @@ export default function Awards() {
             gap: "1rem",
             backgroundImage: `url(${ixbackground})`,
             backgroundAttachment: "fixed",
-            backgroundSize: "100%"
-        }} id="awards">
+            backgroundSize: "100%",
+            marginBottom: "10px",
+        }} id="awards" ref={containerRef}>
             <Typography color="primary" component="h1" variant="h1" fontWeight="bold" marginTop="1rem" textAlign="center">
                 Awards
             </Typography>

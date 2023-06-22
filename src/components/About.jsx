@@ -1,6 +1,8 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import useElementVisibility from '../hooks/ElementVisibility';
+import VisibilityContext from '../context/Visibility';
 
 export default function About() {
     const [matches, setMatches] = useState(
@@ -13,6 +15,15 @@ export default function About() {
             .addEventListener('change', e => setMatches(e.matches));
     }, []);
 
+    // Set visible element context
+    const [isVisible, setIsVisible] = useState();
+    const [containerRef] = useElementVisibility(setIsVisible);
+    const {visibleElement, setVisibleElement} = useContext(VisibilityContext);
+
+    useEffect(() => {
+        if (isVisible) setVisibleElement("about");
+    }, [isVisible])
+
     return (
         <Box sx={{
             minHeight: "100vh",
@@ -21,8 +32,9 @@ export default function About() {
             justifyContent: "center",
             alignItems: "center",
             gap: "1rem",
-            paddingBottom: "2rem"
-        }} id="about" bgcolor="secondary.main">
+            paddingBottom: "2rem",
+            marginBottom: "10px",
+        }} id="about" bgcolor="secondary.main" ref={containerRef}>
             <Typography component="h1" variant="h1" fontWeight="bold" marginTop="1rem" textAlign="center">
                 About <Typography color="primary" component="span" variant="span">IX 23</Typography>
             </Typography>
