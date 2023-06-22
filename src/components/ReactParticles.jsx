@@ -134,7 +134,7 @@ export default function ReactParticles() {
             init={particlesInit}
 
             options={{
-                fpsLimit: 60,
+                fpsLimit: 26,
                 fullScreen: {
                     enable: false,
                 },
@@ -150,7 +150,7 @@ export default function ReactParticles() {
                             mode: "repulse",
                             parallax: { enable: false, force: 60, smooth: 10 }
                         },
-                        resize: true
+                        resize: false 
                     },
                     modes: {
                         bubble: { distance: 400, duration: 2, opacity: 0.8, size: 40, speed: 3 },
@@ -176,17 +176,17 @@ export default function ReactParticles() {
                         enable: true,
                         out_mode: "out",
                         random: false,
-                        speed: 0.7,
+                        speed: 0.5,
                         straight: false
                     },
                     rotate: {
                         animation: {
                             enable: true,
-                            speed: 10,
+                            speed: 3,
                             sync: false
                         }
                     },
-                    number: { density: { enable: true, area: 800 }, value: 30 },
+                    number: { density: { enable: true, area: 800 }, value: 20 },
                     opacity: {
                         animation: { enable: true, minimumValue: 0.5, speed: 1, sync: false },
                         random: false,
@@ -205,12 +205,14 @@ export default function ReactParticles() {
                         type: "char"
                     },
                     size: {
-                        anim: { enable: true, minimumValue: 8, speed: 20, sync: false },
+                        anim: { enable: true, minimumValue: 8, speed: 5, sync: false },
                         random: { minimumValue: 8, enable: true },
                         value: 36
                     }
                 },
-                detectRetina: true
+                detectRetina: true,
+                pauseOnOutsideViewport: true,
+                pauseOnBlur: true,
             }}
         />
     )
