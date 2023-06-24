@@ -55,7 +55,12 @@ export default function Dashboard() {
                     marginBottom: "5rem",
                     marginRight: "2rem",
                     zIndex: "10000",
-                    borderRadius: "1rem",
+                    width: "50px",
+                    height: "50px",
+                    borderRadius: "50%",
+                    background: "linear-gradient(0deg, rgba(255,255,255,10%) 0%, rgba(255,255,255,15%) 80%, rgba(255,255,255,20%) 100%)",
+                    backdropFilter: "blur(10px)",
+                    boxShadow: "0 2px 5px rgba(20, 20, 20, 70%)",
                     padding: "2rem"
                 }}>
                 <MenuIcon color="primary" />
