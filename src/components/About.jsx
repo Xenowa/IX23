@@ -37,8 +37,10 @@ export default function About() {
                 margin: "0 auto"
             }} >
                 <iframe
-                    style={{ borderRadius: "1rem", width: matches ? "25rem" : "100%", height: "35rem", border: "1px solid var(--primary)", pointerEvents: "none" }}
-                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FTSJhXfZDrLKfYTr8jLwIaM%2FIX-23-Website%3Ftype%3Ddesign%26node-id%3D0%253A1%26t%3DcIolwqXDdsha2iG9-1"
+                    style={{ borderRadius: "1rem", width: matches ? "25rem" : "80%", height: "34rem", border: "1px solid var(--primary)" }}
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHLzvRBwIbjJiwQM7tpJj7v%2Fvision-OS-Starting-Design%3Ftype%3Ddesign%26node-id%3D3-118%26scaling%3Dcontain%26page-id%3D3%253A114%26starting-point-node-id%3D3%253A118%26mode%3Ddesign"
+                    allowfullscreen
+                    loading="lazy"
                 />
 
                 <Typography
@@ -46,7 +48,7 @@ export default function About() {
                     variant="p"
                     sx={{
                         bgcolor: "secondaryLight.main",
-                        padding: "2rem",
+                        padding: "3rem",
                         maxWidth: "35rem",
                         borderRadius: "0.5rem",
                         textAlign: "justify"

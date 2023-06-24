@@ -234,7 +234,7 @@ export default function Contact() {
                     textAlign: "center"
                 }}>
                     <img
-                        style={{ height: "15rem", width: "100%", objectFit: "cover", objectPosition: "top" }}
+                        style={{ height: "15rem", width: "100%", objectFit: "cover", objectPosition: "50% 20%" }}
                         src={lahiru}
                         title="Lahiru Viraj"
                     />

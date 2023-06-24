@@ -26,19 +26,18 @@ export default function Schedule() {
                         <Typography variant={heading} component="span" fontWeight="bold">
                             Opening of Registrations
                         </Typography>
+                        <Typography variant="h6" component="h6">
+                            June 28th
+                        </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                         <TimelineDot color="secondaryLight" variant="filled">
-                            <ScheduleSendIcon sx={{ color: "primary.main" }} fontSize="large" />
+                            <ScheduleSendIcon sx={{ color: "primary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />
                         </TimelineDot>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                     </TimelineSeparator>
-                    <TimelineContent sx={{ m: 'auto 0' }}>
-                        <Typography variant="h6" component="span">
-                            June 28th
-                        </Typography>
-                    </TimelineContent>
+                    <TimelineContent sx={{ m: 'auto 0' }} />
                 </TimelineItem>
 
                 <TimelineItem>
@@ -46,19 +45,18 @@ export default function Schedule() {
                         <Typography variant={heading} component="span" fontWeight="bold">
                             Closing of Registrations
                         </Typography>
+                        <Typography variant="h6" component="h6">
+                            July 8th
+                        </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                         <TimelineDot color="secondaryLight" variant="filled">
-                            <CancelScheduleSendIcon sx={{ color: "primary.main" }} fontSize="large" />
+                            <CancelScheduleSendIcon sx={{ color: "primary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />
                         </TimelineDot>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                     </TimelineSeparator>
-                    <TimelineContent sx={{ m: 'auto 0' }}>
-                        <Typography variant="h6" component="span">
-                            July 8th
-                        </Typography>
-                    </TimelineContent>
+                    <TimelineContent sx={{ m: 'auto 0' }} />
                 </TimelineItem>
 
                 <TimelineItem>
@@ -66,19 +64,18 @@ export default function Schedule() {
                         <Typography variant={heading} component="span" fontWeight="bold">
                             Awarness Session
                         </Typography>
+                        <Typography variant="h6" component="h6">
+                            July 11th
+                        </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                         <TimelineDot color="secondaryLight" variant="filled">
-                            <CoPresentIcon sx={{ color: "primary.main" }} fontSize="large" />
+                            <CoPresentIcon sx={{ color: "primary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />
                         </TimelineDot>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                     </TimelineSeparator>
-                    <TimelineContent sx={{ m: 'auto 0' }}>
-                        <Typography variant="h6" component="span">
-                            July 11th
-                        </Typography>
-                    </TimelineContent>
+                    <TimelineContent sx={{ m: 'auto 0' }} />
                 </TimelineItem>
 
                 <TimelineItem>
@@ -86,19 +83,18 @@ export default function Schedule() {
                         <Typography variant={heading} component="span" fontWeight="bold">
                             Initial Design Submission Opening
                         </Typography>
+                        <Typography variant="h6" component="h6">
+                            July 12th
+                        </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                         <TimelineDot color="secondaryLight" variant="filled">
-                            <EditIcon sx={{ color: "primary.main" }} fontSize="large" />
+                            <EditIcon sx={{ color: "primary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />
                         </TimelineDot>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                     </TimelineSeparator>
-                    <TimelineContent sx={{ m: 'auto 0' }}>
-                        <Typography variant="h6" component="span">
-                            July 12th
-                        </Typography>
-                    </TimelineContent>
+                    <TimelineContent sx={{ m: 'auto 0' }} />
                 </TimelineItem>
 
                 <TimelineItem>
@@ -106,19 +102,18 @@ export default function Schedule() {
                         <Typography variant={heading} component="span" fontWeight="bold">
                             Workshop 1
                         </Typography>
+                        <Typography variant="h6" component="h6">
+                            July 15th
+                        </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                         <TimelineDot color="secondaryLight" variant="filled">
-                            <HandymanIcon sx={{ color: "primary.main" }} fontSize="large" />
+                            <HandymanIcon sx={{ color: "primary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />
                         </TimelineDot>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                     </TimelineSeparator>
-                    <TimelineContent sx={{ m: 'auto 0' }}>
-                        <Typography variant="h6" component="span">
-                            July 15th
-                        </Typography>
-                    </TimelineContent>
+                    <TimelineContent sx={{ m: 'auto 0' }} />
                 </TimelineItem>
 
                 <TimelineItem>
@@ -126,19 +121,18 @@ export default function Schedule() {
                         <Typography variant={heading} component="span" fontWeight="bold">
                             Initial Design Submission Closing
                         </Typography>
+                        <Typography variant="h6" component="h6">
+                            July 19th
+                        </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                         <TimelineDot color="secondaryLight" variant="filled">
-                            <EditOffIcon sx={{ color: "primary.main" }} fontSize="large" />
+                            <EditOffIcon sx={{ color: "primary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />
                         </TimelineDot>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                     </TimelineSeparator>
-                    <TimelineContent sx={{ m: 'auto 0' }}>
-                        <Typography variant="h6" component="span">
-                            July 19th
-                        </Typography>
-                    </TimelineContent>
+                    <TimelineContent sx={{ m: 'auto 0' }} />
                 </TimelineItem>
 
                 <TimelineItem>
@@ -146,19 +140,18 @@ export default function Schedule() {
                         <Typography variant={heading} component="span" fontWeight="bold">
                             Workshop 2
                         </Typography>
+                        <Typography variant="h6" component="h6">
+                            July 26th
+                        </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                         <TimelineDot color="secondaryLight" variant="filled">
-                            <HandymanIcon sx={{ color: "primary.main" }} fontSize="large" />
+                            <HandymanIcon sx={{ color: "primary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />
                         </TimelineDot>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                     </TimelineSeparator>
-                    <TimelineContent sx={{ m: 'auto 0' }}>
-                        <Typography variant="h6" component="span">
-                            July 26th
-                        </Typography>
-                    </TimelineContent>
+                    <TimelineContent sx={{ m: 'auto 0' }} />
                 </TimelineItem>
 
                 <TimelineItem>
@@ -166,19 +159,18 @@ export default function Schedule() {
                         <Typography variant={heading} component="span" fontWeight="bold">
                             Announcement of Finalists
                         </Typography>
+                        <Typography variant="h6" component="h6">
+                            July 30th
+                        </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                         <TimelineDot color="secondaryLight" variant="filled">
-                            <AutoAwesomeIcon sx={{ color: "primary.main" }} fontSize="large" />
+                            <AutoAwesomeIcon sx={{ color: "primary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />
                         </TimelineDot>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                     </TimelineSeparator>
-                    <TimelineContent sx={{ m: 'auto 0' }}>
-                        <Typography variant="h6" component="span">
-                            July 30th
-                        </Typography>
-                    </TimelineContent>
+                    <TimelineContent sx={{ m: 'auto 0' }} />
                 </TimelineItem>
 
                 <TimelineItem>
@@ -186,19 +178,18 @@ export default function Schedule() {
                         <Typography variant={heading} component="span" fontWeight="bold">
                             Designathon
                         </Typography>
+                        <Typography variant="h6" component="h6">
+                            August 12th
+                        </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                         <TimelineDot color="secondaryLight" variant="filled">
-                            <DrawIcon sx={{ color: "primary.main" }} fontSize="large" />
+                            <DrawIcon sx={{ color: "primary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />
                         </TimelineDot>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                     </TimelineSeparator>
-                    <TimelineContent sx={{ m: 'auto 0' }}>
-                        <Typography variant="h6" component="span">
-                            August 12th
-                        </Typography>
-                    </TimelineContent>
+                    <TimelineContent sx={{ m: 'auto 0' }} />
                 </TimelineItem>
 
                 <TimelineItem>
@@ -206,19 +197,18 @@ export default function Schedule() {
                         <Typography variant={heading} component="span" fontWeight="bold">
                             Grab the Trophy
                         </Typography>
+                        <Typography variant="h6" component="h6">
+                            August 13th
+                        </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                         <TimelineDot color="secondaryLight" variant="filled">
-                            <EmojiEventsIcon sx={{ color: "primary.main" }} fontSize="large" />
+                            <EmojiEventsIcon sx={{ color: "primary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />
                         </TimelineDot>
                         <TimelineConnector sx={{ bgcolor: 'primary.main', height: "2rem" }} />
                     </TimelineSeparator>
-                    <TimelineContent sx={{ m: 'auto 0' }}>
-                        <Typography variant="h6" component="span">
-                            August 13th
-                        </Typography>
-                    </TimelineContent>
+                    <TimelineContent sx={{ m: 'auto 0' }} />
                 </TimelineItem>
             </div>
         )
@@ -237,7 +227,7 @@ export default function Schedule() {
 
             {/* For Desktops */}
             <Timeline position="alternate" sx={{ display: { xs: "none", md: "block" }, width: "50rem" }}>
-                <Content heading="h3" />
+                <Content heading="h4" />
             </Timeline>
             {/* For mobile */}
             <Timeline position="alternate" sx={{ display: { xs: "block", md: "none" } }}>

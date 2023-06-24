@@ -3,7 +3,7 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 import Button from "@mui/material/Button"
 import { Box } from "@mui/material"
-import ArticleIcon from '@mui/icons-material/Article';
+import IXImage from "../../assets/IX.svg"
 
 export default function UIPage() {
 
@@ -13,9 +13,7 @@ export default function UIPage() {
     return (
         <Box sx={{
             bgcolor: "secondary.main",
-            // width: "100%",
             width: "20rem",
-            margin: "2rem 0",
             order: {
                 xs: "1",
                 md: "2"
@@ -23,18 +21,16 @@ export default function UIPage() {
         }}>
             <Navbar />
             <Container sx={{ marginBottom: "2rem", display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <Box sx={{
-                    bgcolor: "secondaryLight.main",
-                    width: "5rem",
-                    height: "5rem",
-                    borderRadius: "0.5rem",
-                    margin: "10rem 0",
+                <img src={IXImage} alt="IIT logo" style={{
+                    maxWidth: "10rem",
+                    height: "10rem",
+                    objectFit: "contain",
                     display: "flex",
                     justifyContent: "center",
-                    alignItems: "center"
-                }}>
-                    <ArticleIcon color="primary" />
-                </Box>
+                    alignItems: "center",
+                    borderRadius: "0.5rem",
+                    margin: "10rem 0",
+                }} />
 
                 <Button size="large" variant="contained" color="primary" component="a" href="#" target='_blank'>
                     Download Booklet

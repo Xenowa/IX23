@@ -42,7 +42,9 @@ export default function Dashboard() {
                     marginRight: "2rem",
                     zIndex: "10000",
                     borderRadius: "1rem",
-                    padding: "2rem"
+                    padding: "2rem",
+                    // bgcolor: "#00000050",
+                    visibility: (mobileOpen ? "hidden" : "visible")
                 }}>
                 <MenuIcon color="primary" />
             </Fab>
@@ -57,7 +59,7 @@ export default function Dashboard() {
                 sx={{
                     padding: "1rem",
                     borderRadius: "1rem",
-                    bgcolor: "secondary.main",
+                    bgcolor: "#00000050",
                     position: "fixed",
                     bottom: "0",
                     right: "0",
@@ -71,7 +73,7 @@ export default function Dashboard() {
                         md: "none"
                     },
                     visibility: (mobileOpen ? "visible" : "hidden"),
-                    transition: "all 300ms ease-in-out",
+                    // transition: "all 300ms ease-in-out",
                     flexDirection: "column",
                     gap: "0.5rem",
                 }}
@@ -111,7 +113,6 @@ export default function Dashboard() {
                     left: "0",
                     right: "0",
                     margin: "0 auto",
-                    marginBottom: "1rem",
                     width: "fit-content",
                     zIndex: "100",
                     display: {

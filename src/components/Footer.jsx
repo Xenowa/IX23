@@ -11,7 +11,7 @@ export default function Footer() {
                 target="_blank"
                 sx={{
                     textDecoration: "none",
-                    color: "primary.main"
+                    color: "primary.main",
                 }}
             >
                 Xenowa
