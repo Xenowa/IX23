@@ -51,8 +51,8 @@ Tripetto form
   overflow-x: hidden;
   max-width: 50rem;
   width: 100%;
-  height: 50rem;
+  /* height: 50rem; */
   border-radius: 0.5rem;
-  padding: 1rem;
+  margin: 1rem;
   background: #1d1d1d;
 }
