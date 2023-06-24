@@ -16,8 +16,20 @@ import HandymanIcon from '@mui/icons-material/Handyman';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import DrawIcon from '@mui/icons-material/Draw';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import { useContext, useEffect, useState } from "react";
+import useElementVisibility from "../hooks/ElementVisibility";
+import VisibilityContext from "../context/Visibility";
 
 export default function Schedule() {
+    // Set visible element context
+    const [isVisible, setIsVisible] = useState();
+    const [containerRef] = useElementVisibility(setIsVisible);
+    const {visibleElement, setVisibleElement} = useContext(VisibilityContext);
+
+    useEffect(() => {
+        if (isVisible) setVisibleElement("schedule");
+    }, [isVisible])
+
     const Content = ({ heading }) => {
         return (
             <div>
@@ -221,8 +233,9 @@ export default function Schedule() {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            gap: "1rem"
-        }} id="schedule" bgcolor="secondary.main">
+            gap: "1rem",
+            marginBottom: "10px",
+        }} id="schedule" bgcolor="secondary.main" ref={containerRef}>
             <Typography color="primary" component="h1" variant="h1" fontWeight="bold" marginTop="1rem" textAlign="center">Schedule</Typography>
 
             {/* For Desktops */}

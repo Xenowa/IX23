@@ -2,7 +2,10 @@ import { Box, Button, Typography } from "@mui/material";
 // import AquathonLightIcon from "../assets/Auquadrop-light.png"
 import IXIcon from "../assets/IX.svg"
 import ReactParticles from "./ReactParticles";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import useElementVisibility from "../hooks/ElementVisibility";
+import VisibilityContext from "../context/Visibility";
+import zIndex from "@mui/material/styles/zIndex";
 
 export default function Home() {
     const [matches, setMatches] = useState(
@@ -15,6 +18,15 @@ export default function Home() {
             .addEventListener('change', e => setMatches(e.matches));
     }, []);
 
+    // Set visible element context
+    const [isVisible, setIsVisible] = useState();
+    const [containerRef] = useElementVisibility(setIsVisible);
+    const { setVisibleElement } = useContext(VisibilityContext);
+
+    useEffect(() => {
+        if (isVisible) setVisibleElement("home");
+    }, [isVisible])
+
     return (
         <Box sx={{
             minHeight: "100vh",
@@ -22,9 +34,22 @@ export default function Home() {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-        }} id="home">
+            marginBottom: "10px",
+        }} id="home" ref={containerRef}>
 
             <ReactParticles />
+
+            <div style={{
+                width: "100%",
+                height: "100vh",
+                background: "rgba(0, 0, 0, 60%)",
+                position: "absolute",
+                top: "0",
+                left: "0",
+                zIndex: "1",
+                backdropFilter: "blur(1px)",
+            }}></div>
+
             <img
                 src={IXIcon} alt="Logo"
                 style={{
@@ -50,7 +75,8 @@ export default function Home() {
                 component="a"
                 sx={{ 
                     fontSize: "20px",
-                    backdropFilter: "blur(10px)"
+                    backdropFilter: "blur(10px)",
+                    zIndex: "2"
                 }}
                 variant="outlined"
                 color="primary"

@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import MenuIcon from '@mui/icons-material/Menu';
-import { useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import HomeIcon from '@mui/icons-material/Home';
 import DrawIcon from '@mui/icons-material/Draw';
 import ArticleIcon from '@mui/icons-material/Article';
@@ -13,6 +13,7 @@ import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Fab from "@mui/material/Fab"
+import VisibilityContext from '../context/Visibility';
 
 export default function Dashboard() {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -21,6 +22,19 @@ export default function Dashboard() {
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
+
+    const { visibleElement } = useContext(VisibilityContext);
+
+    useEffect(() => {
+        if (visibleElement == "home") setValue(0);
+        else if (visibleElement == "about") setValue(2);
+        else if (visibleElement == "guidelines") setValue(4);
+        else if (visibleElement == "schedule") setValue(6);
+        else if (visibleElement == "awards") setValue(8);
+        else if (visibleElement == "partners") setValue(10);
+        else if (visibleElement == "register") setValue(12);
+        else if (visibleElement == "contact") setValue(14);
+    }, [visibleElement])
 
     const desktopNavDividerColor = "#2e3b15";
 
@@ -41,9 +55,13 @@ export default function Dashboard() {
                     marginBottom: "5rem",
                     marginRight: "2rem",
                     zIndex: "10000",
-                    borderRadius: "1rem",
+                    width: "50px",
+                    height: "50px",
+                    borderRadius: "50%",
+                    background: "linear-gradient(0deg, rgba(255,255,255,10%) 0%, rgba(255,255,255,15%) 80%, rgba(255,255,255,20%) 100%)",
+                    backdropFilter: "blur(10px)",
+                    boxShadow: "0 2px 5px rgba(20, 20, 20, 70%)",
                     padding: "2rem",
-                    // bgcolor: "#00000050",
                     visibility: (mobileOpen ? "hidden" : "visible")
                 }}>
                 <MenuIcon color="primary" />
@@ -120,7 +138,8 @@ export default function Dashboard() {
                         md: "flex"
                     },
                     border: "1px solid #1a2407",
-                    backdropFilter: "blur(10px)"
+                    backdropFilter: "blur(10px)",
+                    boxShadow: "0 2px 5px rgba(0, 0, 0, 70%)",
                 }}
             >
 
