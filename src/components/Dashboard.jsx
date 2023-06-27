@@ -131,6 +131,7 @@ export default function Dashboard() {
                     left: "0",
                     right: "0",
                     margin: "0 auto",
+                    marginBottom: "1.5rem",
                     width: "fit-content",
                     zIndex: "100",
                     display: {
