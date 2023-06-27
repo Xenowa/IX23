@@ -65,7 +65,7 @@ export default function Guidelines() {
                         disableGutters
                         expanded={expanded === 'panel1'}
                         onChange={handleChange('panel1')}
-                        sx={{ bgcolor: "secondary.main", padding: "1rem" }}
+                        sx={{ bgcolor: "secondary.main", padding: "2rem 2rem 1rem 2rem" }}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon fontSize="large" color="primary" />}>
                             <Typography variant="h4">Can I participate as an individual, or do I need to form a team?</Typography>
@@ -81,7 +81,7 @@ export default function Guidelines() {
                         disableGutters
                         expanded={expanded === 'panel2'}
                         onChange={handleChange('panel2')}
-                        sx={{ bgcolor: "secondary.main", padding: "1rem" }}
+                        sx={{ bgcolor: "secondary.main", padding: "1rem 2rem 1rem 2rem" }}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon fontSize="large" color="primary" />}>
                             <Typography variant="h4">What is the significance of XR-based UI/UX solutions in IX 23?</Typography>
@@ -100,7 +100,7 @@ export default function Guidelines() {
                         disableGutters
                         expanded={expanded === 'panel3'}
                         onChange={handleChange('panel3')}
-                        sx={{ bgcolor: "secondary.main", padding: "1rem" }}
+                        sx={{ bgcolor: "secondary.main", padding: "1rem 2rem 1rem 2rem" }}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon fontSize="large" color="primary" />}>
                             <Typography variant="h4">What is the eligibility criteria for participating in IX 23?</Typography>
@@ -117,7 +117,7 @@ export default function Guidelines() {
                         disableGutters
                         expanded={expanded === 'panel4'}
                         onChange={handleChange('panel4')}
-                        sx={{ bgcolor: "secondary.main", padding: "1rem" }}
+                        sx={{ bgcolor: "secondary.main", padding: "1rem 2rem 1rem 2rem" }}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon fontSize="large" color="primary" />}>
                             <Typography variant="h4">What are the two tracks available for participants in the initial round?</Typography>
@@ -137,7 +137,7 @@ export default function Guidelines() {
                         disableGutters
                         expanded={expanded === 'panel5'}
                         onChange={handleChange('panel5')}
-                        sx={{ bgcolor: "secondary.main", padding: "1rem" }}
+                        sx={{ bgcolor: "secondary.main", padding: "1rem 2rem 1rem 2rem" }}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon fontSize="large" color="primary" />}>
                             <Typography variant="h4">What is the Round 1 Best Vision OS Design Award?</Typography>
@@ -156,7 +156,7 @@ export default function Guidelines() {
                         disableGutters
                         expanded={expanded === 'panel6'}
                         onChange={handleChange('panel6')}
-                        sx={{ bgcolor: "secondary.main", padding: "1rem" }}
+                        sx={{ bgcolor: "secondary.main", padding: "1rem 2rem 2rem 2rem" }}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon fontSize="large" color="primary" />}>
                             <Typography variant="h4">How long will the event last?</Typography>

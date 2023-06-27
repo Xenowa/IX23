@@ -18,7 +18,7 @@ export default function About() {
     // Set visible element context
     const [isVisible, setIsVisible] = useState();
     const [containerRef] = useElementVisibility(setIsVisible);
-    const {visibleElement, setVisibleElement} = useContext(VisibilityContext);
+    const { visibleElement, setVisibleElement } = useContext(VisibilityContext);
 
     useEffect(() => {
         if (isVisible) setVisibleElement("about");
@@ -67,7 +67,7 @@ export default function About() {
                     }}
                 >
                     Welcome to IX 23, Sri Lanka's prestigious designathon event that unites the brightest minds in design. This year's IX is a
-                    <Typography component="span" variant="span" color="primary"> two-phase research-based designathon focusing on XR-based UI/UX solutions. </Typography>
+                    <Typography component="span" variant="span" color="primary"> two-phase research-oriented designathon focusing on XR-based UI/UX solutions. </Typography>
                     By integrating Vision OS-based AR and VR concepts, we encourage participants to explore new dimensions of design. <br /> <br />
 
                     In the initial round, participants get to choose between
