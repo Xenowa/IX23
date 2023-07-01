@@ -70,11 +70,9 @@ export default function About() {
                     <Typography component="span" variant="span" color="primary"> two-phase research-oriented designathon focusing on XR-based UI/UX solutions. </Typography>
                     By integrating Vision OS-based AR and VR concepts, we encourage participants to explore new dimensions of design. <br /> <br />
 
-                    In the initial round, participants get to choose between
-                    <Typography component="span" variant="span" color="primary"> two tracks. </Typography>
-                    The first tackles Sustainable Development Goals (SDGs) through innovative UI/UX solutions. The second challenges participants
-                    to create cutting-edge UI/UX solutions using Apple's Vision OS design standards.
-                    <Typography component="span" variant="span" color="primary"> Selecting the second track makes teams eligible for the coveted Round 1 Best Vision OS Design Award. </Typography> <br /> <br />
+                    In the initial round, participants can choose one domain from the provided Sustainable Development Goals (SDG) domains and
+                    create their UI/UX solutions based on that chosen domain.
+                    <Typography component="span" variant="span" color="primary"> Teams who attempt integrating XR-based Spatial UIs that adhere to the Vision OS design guidelines will be eligible to earn bonus marks. </Typography> <br /> <br />
 
                     The electrifying final round is a
                     <Typography component="span" variant="span" color="primary"> 24-hour challenge </Typography>

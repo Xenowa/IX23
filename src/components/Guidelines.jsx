@@ -120,34 +120,12 @@ export default function Guidelines() {
                         sx={{ bgcolor: "secondary.main", padding: "1rem 2rem 1rem 2rem" }}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon fontSize="large" color="primary" />}>
-                            <Typography variant="h4">What are the two tracks available for participants in the initial round?</Typography>
+                            <Typography variant="h4">How to earn bonus marks in the initial round?</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography variant="p">
-                                In the initial round, participants can choose between two tracks. The first track focuses on
-                                addressing pressing global challenges related to Sustainable Development Goals (SDGs), where
-                                participants can create UI/UX solutions that contribute to solving these challenges. The
-                                second track involves creating UI/UX solutions using Extended Reality (XR) concepts and
-                                adhering to Apple's Vision OS design guidelines.
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
-                    <Divider color="#AEEB40" />
-                    <Accordion
-                        disableGutters
-                        expanded={expanded === 'panel5'}
-                        onChange={handleChange('panel5')}
-                        sx={{ bgcolor: "secondary.main", padding: "1rem 2rem 1rem 2rem" }}
-                    >
-                        <AccordionSummary expandIcon={<ExpandMoreIcon fontSize="large" color="primary" />}>
-                            <Typography variant="h4">What is the Round 1 Best Vision OS Design Award?</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography variant="p">
-                                The Round 1 Best Vision OS Design Award is a recognition given to the top team that chooses the
-                                second track and creates the most outstanding UI/UX solution using Extended Reality (XR)
-                                concepts and Apple's Vision OS design guidelines. This award acknowledges their exceptional
-                                design skills and innovation in the field.
+                                The criteria for earning bonus marks is integrating at least 5 spatial UI's that
+                                adhere to Vision OS design guidelines.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -166,8 +144,7 @@ export default function Guidelines() {
                                 In the initial round, participants will have a full week to ideate and bring their UI/UX
                                 Solutions to life. Following the judging process for the initial round, the excitement continues
                                 to build as the event enters its thrilling 24-hour final round. The entire journey of IX 23 spans
-                                approximately two months, allowing participants ample time to craft and refine their designs to
-                                perfection and make a lasting impact in the world of design.
+                                approximately two months, allowing participants ample time to refine their design skills.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>

@@ -24,7 +24,7 @@ export default function Schedule() {
     // Set visible element context
     const [isVisible, setIsVisible] = useState();
     const [containerRef] = useElementVisibility(setIsVisible);
-    const {visibleElement, setVisibleElement} = useContext(VisibilityContext);
+    const { visibleElement, setVisibleElement } = useContext(VisibilityContext);
 
     useEffect(() => {
         if (isVisible) setVisibleElement("schedule");
@@ -39,7 +39,7 @@ export default function Schedule() {
                             Opening of Registrations
                         </Typography>
                         <Typography variant="h6" component="h6">
-                            June 28th
+                            July 12th
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -58,7 +58,7 @@ export default function Schedule() {
                             Closing of Registrations
                         </Typography>
                         <Typography variant="h6" component="h6">
-                            July 8th
+                            July 22nd
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -77,7 +77,7 @@ export default function Schedule() {
                             Awarness Session
                         </Typography>
                         <Typography variant="h6" component="h6">
-                            July 11th
+                            July 25th
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -96,7 +96,7 @@ export default function Schedule() {
                             Initial Design Submission Opening
                         </Typography>
                         <Typography variant="h6" component="h6">
-                            July 12th
+                            July 26th
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -115,7 +115,7 @@ export default function Schedule() {
                             Workshop 1
                         </Typography>
                         <Typography variant="h6" component="h6">
-                            July 15th
+                            July 29th
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -134,7 +134,7 @@ export default function Schedule() {
                             Initial Design Submission Closing
                         </Typography>
                         <Typography variant="h6" component="h6">
-                            July 19th
+                            Aug 2nd
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -153,7 +153,7 @@ export default function Schedule() {
                             Workshop 2
                         </Typography>
                         <Typography variant="h6" component="h6">
-                            July 26th
+                            Aug 9th
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -172,7 +172,7 @@ export default function Schedule() {
                             Announcement of Finalists
                         </Typography>
                         <Typography variant="h6" component="h6">
-                            July 30th
+                            Aug 13th
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -191,7 +191,7 @@ export default function Schedule() {
                             Designathon
                         </Typography>
                         <Typography variant="h6" component="h6">
-                            August 12th
+                            Aug 19th
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
@@ -210,7 +210,7 @@ export default function Schedule() {
                             Grab the Trophy
                         </Typography>
                         <Typography variant="h6" component="h6">
-                            August 13th
+                            Aug 20th
                         </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>

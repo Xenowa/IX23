@@ -3,7 +3,7 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 import Button from "@mui/material/Button"
 import { Box } from "@mui/material"
-import IXImage from "../../assets/IX.svg"
+import booklet from "../../assets/guidelines-booklet.png"
 
 export default function UIPage() {
 
@@ -21,7 +21,7 @@ export default function UIPage() {
         }}>
             <Navbar />
             <Container sx={{ marginBottom: "2rem", display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <img src={IXImage} alt="IIT logo" style={{
+                <img src={booklet} alt="Booklet logo" style={{
                     maxWidth: "10rem",
                     height: "10rem",
                     objectFit: "contain",

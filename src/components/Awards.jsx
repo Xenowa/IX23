@@ -16,7 +16,7 @@ export default function Awards() {
     // Set visible element context
     const [isVisible, setIsVisible] = useState();
     const [containerRef] = useElementVisibility(setIsVisible);
-    const {setVisibleElement} = useContext(VisibilityContext);
+    const { setVisibleElement } = useContext(VisibilityContext);
 
     useEffect(() => {
         if (isVisible) setVisibleElement("awards");
@@ -53,17 +53,17 @@ export default function Awards() {
                     <CardMedia
                         sx={{
                             height: {
-                                md: "23rem",
+                                md: "30rem",
                                 xs: "20rem"
                             },
                             borderRadius: "0.5rem 0.5rem 0 0"
                         }}
-                        image={placeholder}
+                        image={firstplace}
                         title="First Place"
                     />
                     <CardContent>
                         <Typography gutterBottom color="primary" variant="h2" component="h2">
-                            1st Place
+                            Winner
                         </Typography>
                         <Typography component="h3" variant="h3">
                             Rs. 60,000
@@ -83,7 +83,7 @@ export default function Awards() {
                 }}>
                     <CardMedia
                         sx={{ height: "20rem", borderRadius: "0.5rem 0.5rem 0 0" }}
-                        image={placeholder}
+                        image={secondplace}
                         title="Second Place"
                     />
                     <CardContent>
@@ -108,8 +108,8 @@ export default function Awards() {
                 }}>
                     <CardMedia
                         sx={{ height: "20rem", borderRadius: "0.5rem 0.5rem 0 0" }}
-                        image={placeholder}
-                        title="First Place"
+                        image={thirdplace}
+                        title="Third Place"
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h2" component="h2">
@@ -120,14 +120,6 @@ export default function Awards() {
                         </Typography>
                     </CardContent>
                 </Card>
-            </Box>
-
-            <Box sx={{ maxWidth: "40rem", display: "flex", alignItems: "center", flexDirection: "column", gap: "1rem", margin: "1rem 3rem" }}>
-                <Box sx={{ bgcolor: "secondaryLight.main", padding: "1rem", borderRadius: "0.5rem", width: "100%", textAlign: "center" }}>
-                    The top team who picked the Vision OS Track of round 1 is eligible for the <br />
-                    <Typography gutterBottom color="primary" variant="span" component="span"> Best Vision OS Design Award  </Typography> <br />
-                    worth <b>Rs. 15,000</b>
-                </Box>
             </Box>
         </Box>
     )
