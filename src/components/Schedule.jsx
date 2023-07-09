@@ -35,10 +35,10 @@ export default function Schedule() {
             <div>
                 <TimelineItem>
                     <TimelineOppositeContent sx={{ m: 'auto 0' }}>
-                        <Typography variant={heading} component="span" fontWeight="bold">
+                        <Typography variant={heading} component="span" fontWeight="bold" sx={{ wordBreak: "break-word" }}>
                             Opening of Registrations
                         </Typography>
-                        <Typography variant="h6" component="h6">
+                        <Typography variant="h6" component="h6" sx={{ wordBreak: "break-word" }}>
                             July 12th
                         </Typography>
                     </TimelineOppositeContent>
@@ -54,10 +54,10 @@ export default function Schedule() {
 
                 <TimelineItem>
                     <TimelineOppositeContent sx={{ m: 'auto 0' }}>
-                        <Typography variant={heading} component="span" fontWeight="bold">
+                        <Typography variant={heading} component="span" fontWeight="bold" sx={{ wordBreak: "break-word" }}>
                             Closing of Registrations
                         </Typography>
-                        <Typography variant="h6" component="h6">
+                        <Typography variant="h6" component="h6" sx={{ wordBreak: "break-word" }}>
                             July 22nd
                         </Typography>
                     </TimelineOppositeContent>
@@ -73,10 +73,10 @@ export default function Schedule() {
 
                 <TimelineItem>
                     <TimelineOppositeContent sx={{ m: 'auto 0' }}>
-                        <Typography variant={heading} component="span" fontWeight="bold">
+                        <Typography variant={heading} component="span" fontWeight="bold" sx={{ wordBreak: "break-word" }}>
                             Awarness Session
                         </Typography>
-                        <Typography variant="h6" component="h6">
+                        <Typography variant="h6" component="h6" sx={{ wordBreak: "break-word" }}>
                             July 25th
                         </Typography>
                     </TimelineOppositeContent>
@@ -92,10 +92,10 @@ export default function Schedule() {
 
                 <TimelineItem>
                     <TimelineOppositeContent sx={{ m: 'auto 0' }}>
-                        <Typography variant={heading} component="span" fontWeight="bold">
+                        <Typography variant={heading} component="span" fontWeight="bold" sx={{ wordBreak: "break-word" }}>
                             Initial Design Submission Opening
                         </Typography>
-                        <Typography variant="h6" component="h6">
+                        <Typography variant="h6" component="h6" sx={{ wordBreak: "break-word" }}>
                             July 26th
                         </Typography>
                     </TimelineOppositeContent>
@@ -111,10 +111,10 @@ export default function Schedule() {
 
                 <TimelineItem>
                     <TimelineOppositeContent sx={{ m: 'auto 0' }}>
-                        <Typography variant={heading} component="span" fontWeight="bold">
+                        <Typography variant={heading} component="span" fontWeight="bold" sx={{ wordBreak: "break-word" }}>
                             Workshop 1
                         </Typography>
-                        <Typography variant="h6" component="h6">
+                        <Typography variant="h6" component="h6" sx={{ wordBreak: "break-word" }}>
                             July 29th
                         </Typography>
                     </TimelineOppositeContent>
@@ -130,10 +130,10 @@ export default function Schedule() {
 
                 <TimelineItem>
                     <TimelineOppositeContent sx={{ m: 'auto 0' }}>
-                        <Typography variant={heading} component="span" fontWeight="bold">
+                        <Typography variant={heading} component="span" fontWeight="bold" sx={{ wordBreak: "break-word" }}>
                             Initial Design Submission Closing
                         </Typography>
-                        <Typography variant="h6" component="h6">
+                        <Typography variant="h6" component="h6" sx={{ wordBreak: "break-word" }}>
                             Aug 2nd
                         </Typography>
                     </TimelineOppositeContent>
@@ -149,10 +149,10 @@ export default function Schedule() {
 
                 <TimelineItem>
                     <TimelineOppositeContent sx={{ m: 'auto 0' }}>
-                        <Typography variant={heading} component="span" fontWeight="bold">
+                        <Typography variant={heading} component="span" fontWeight="bold" sx={{ wordBreak: "break-word" }}>
                             Workshop 2
                         </Typography>
-                        <Typography variant="h6" component="h6">
+                        <Typography variant="h6" component="h6" sx={{ wordBreak: "break-word" }}>
                             Aug 9th
                         </Typography>
                     </TimelineOppositeContent>
@@ -168,10 +168,10 @@ export default function Schedule() {
 
                 <TimelineItem>
                     <TimelineOppositeContent sx={{ m: 'auto 0' }}>
-                        <Typography variant={heading} component="span" fontWeight="bold">
+                        <Typography variant={heading} component="span" fontWeight="bold" sx={{ wordBreak: "break-word" }}>
                             Announcement of Finalists
                         </Typography>
-                        <Typography variant="h6" component="h6">
+                        <Typography variant="h6" component="h6" sx={{ wordBreak: "break-word" }}>
                             Aug 13th
                         </Typography>
                     </TimelineOppositeContent>
@@ -187,10 +187,10 @@ export default function Schedule() {
 
                 <TimelineItem>
                     <TimelineOppositeContent sx={{ m: 'auto 0' }}>
-                        <Typography variant={heading} component="span" fontWeight="bold">
+                        <Typography variant={heading} component="span" fontWeight="bold" sx={{ wordBreak: "break-word" }}>
                             Designathon
                         </Typography>
-                        <Typography variant="h6" component="h6">
+                        <Typography variant="h6" component="h6" sx={{ wordBreak: "break-word" }}>
                             Aug 19th
                         </Typography>
                     </TimelineOppositeContent>
@@ -206,10 +206,10 @@ export default function Schedule() {
 
                 <TimelineItem>
                     <TimelineOppositeContent sx={{ m: 'auto 0' }}>
-                        <Typography variant={heading} component="span" fontWeight="bold">
+                        <Typography variant={heading} component="span" fontWeight="bold" sx={{ wordBreak: "break-word" }}>
                             Grab the Trophy
                         </Typography>
-                        <Typography variant="h6" component="h6">
+                        <Typography variant="h6" component="h6" sx={{ wordBreak: "break-word" }}>
                             Aug 20th
                         </Typography>
                     </TimelineOppositeContent>

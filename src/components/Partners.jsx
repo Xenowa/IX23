@@ -3,17 +3,19 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import iitlogo from "../assets/IIT logo.jpg";
 import placeholder from "../assets/placeholder.jpg";
 import { useContext, useEffect, useState } from "react";
 import useElementVisibility from "../hooks/ElementVisibility";
 import VisibilityContext from "../context/Visibility";
+import econsulateLogo from "../assets/econsulate-logo.png"
+import nwysmLogo from "../assets/nysm-logo.jpg"
+import hackslLogo from "../assets/hacksl-logo.png"
 
 export default function Partners() {
     // Set visible element context
     const [isVisible, setIsVisible] = useState();
     const [containerRef] = useElementVisibility(setIsVisible);
-    const {visibleElement, setVisibleElement} = useContext(VisibilityContext);
+    const { visibleElement, setVisibleElement } = useContext(VisibilityContext);
 
     useEffect(() => {
         if (isVisible) setVisibleElement("partners");
@@ -30,84 +32,63 @@ export default function Partners() {
             marginBottom: "10px",
         }} id="partners" bgcolor="secondary.main" ref={containerRef}>
             <Typography component="h1" variant="h1" fontWeight="bold" marginTop="1rem" textAlign="center">
-                {/* Official <Typography color="primaryLight.main" component="span" variant="span">Sponsors</Typography> */}
-                Our <Typography color="primary" component="span" variant="span">Partners</Typography>
+                Official <Typography color="primary" component="span" variant="span">Partners</Typography>
             </Typography>
 
-            <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", gap: "1rem", marginBottom: "1rem" }}>
-                {/* <Typography component="h2" variant="h2" textAlign="center">Official Platinum Partner</Typography> */}
+            {/* =============== Sponsors START ================== */}
+            <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", gap: "3rem", marginBottom: "1rem" }}>
+                <Typography component="h2" variant="h2" textAlign="center">Official Title Partner</Typography>
                 <Box sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "1rem" }}>
-                    <Box component="a" href="https://www.iit.ac.lk/" target="_blank">
+                    <Box component="a" href="https://econsulate.net/" target="_blank" margin="0 2rem" sx={{ transition: "translate 300ms ease-in-out", ":hover": { "translate": "0px -5px" } }}>
                         <Box
                             component="img"
                             sx={{
-                                width: "100%",
-                                maxWidth: "20rem",
-                                height: "100%",
-                                borderRadius: "0.5rem"
+                                maxWidth: {
+                                    xs: "16rem",
+                                    sm: "25rem"
+                                }
                             }}
-                            alt="Partner 1"
-                            src={iitlogo}
-                        />
-                    </Box>
-                </Box>
-                {/* 
-                <Typography component="h2" variant="h2" textAlign="center">Official Gold Partners</Typography>
-                <Box sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "1rem" }}>
-                    <Box component="a" href="#0" target="_blank">
-                        <Box
-                            component="img"
-                            sx={{
-                                width: "20rem",
-                                height: "100%",
-                                borderRadius: "0.5rem"
-                            }}
-                            alt="Partner 1"
-                            src={placeholder}
-                        />
-                    </Box>
-                    <Box component="a" href="#0" target="_blank">
-                        <Box
-                            component="img"
-                            sx={{
-                                width: "20rem",
-                                height: "100%",
-                                borderRadius: "0.5rem"
-                            }}
-                            alt="Partner 1"
-                            src={placeholder}
+                            alt="econsulate"
+                            src={econsulateLogo}
                         />
                     </Box>
                 </Box>
 
-                <Typography component="h2" variant="h2" textAlign="center">Official Bronze Partners</Typography>
+                <Typography component="h2" variant="h2" textAlign="center">Official Digital Media Partner</Typography>
                 <Box sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "1rem" }}>
-                    <Box component="a" href="#0" target="_blank">
+                    <Box component="a" href="https://www.nysm.lk/" target="_blank" margin="0 2rem" sx={{ transition: "translate 300ms ease-in-out", ":hover": { "translate": "0px -5px" } }}>
                         <Box
                             component="img"
                             sx={{
-                                width: "20rem",
-                                height: "100%",
-                                borderRadius: "0.5rem"
+                                maxWidth: {
+                                    xs: "12rem",
+                                    sm: "18rem"
+                                }
                             }}
-                            alt="Partner 1"
-                            src={placeholder}
+                            alt="now you see me"
+                            src={nwysmLogo}
                         />
                     </Box>
-                    <Box component="a" href="#0" target="_blank">
+                </Box>
+
+                <Typography component="h2" variant="h2" textAlign="center">Official Online Event Partners</Typography>
+                <Box sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "1rem" }}>
+                    <Box component="a" href="https://hacksl.tech/" target="_blank" margin="0 2rem" sx={{ transition: "translate 300ms ease-in-out", ":hover": { "translate": "0px -5px" } }}>
                         <Box
                             component="img"
                             sx={{
-                                width: "20rem",
-                                height: "100%",
-                                borderRadius: "0.5rem"
+                                maxWidth: {
+                                    xs: "8rem",
+                                    sm: "10rem"
+                                }
                             }}
-                            alt="Partner 1"
-                            src={placeholder}
+                            alt="hacksl"
+                            src={hackslLogo}
                         />
                     </Box>
-                </Box> */}
+                </Box>
             </Box>
+            {/* =============== Sponsors END ================== */}
         </Box>
     )
 }
