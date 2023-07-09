@@ -71,7 +71,7 @@ export default function Partners() {
                     </Box>
                 </Box>
 
-                <Typography component="h2" variant="h2" textAlign="center">Official Online Event Partners</Typography>
+                <Typography component="h2" variant="h2" textAlign="center">Official Online Event Partner</Typography>
                 <Box sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "1rem" }}>
                     <Box component="a" href="https://hacksl.tech/" target="_blank" margin="0 2rem" sx={{ transition: "translate 300ms ease-in-out", ":hover": { "translate": "0px -5px" } }}>
                         <Box
