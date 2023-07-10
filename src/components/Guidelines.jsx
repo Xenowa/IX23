@@ -5,9 +5,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Divider from "@mui/material/Divider";
 import ixbackground from "../assets/IX-bg.jpg"
 import UIPage from "./UI_Component/UIPage";
-import { useContext, useEffect, useState } from "react";
-import useElementVisibility from "../hooks/ElementVisibility";
-import VisibilityContext from "../context/Visibility";
+import { useState } from "react";
 
 export default function Guidelines() {
     const [expanded, setExpanded] = useState(false);
@@ -15,15 +13,6 @@ export default function Guidelines() {
     const handleChange = (panel) => (event, newExpanded) => {
         setExpanded(newExpanded ? panel : false);
     };
-
-    // Set visible element context
-    const [isVisible, setIsVisible] = useState();
-    const [containerRef] = useElementVisibility(setIsVisible);
-    const { visibleElement, setVisibleElement } = useContext(VisibilityContext);
-
-    useEffect(() => {
-        if (isVisible) setVisibleElement("guidelines");
-    }, [isVisible])
 
     return (
         <Box sx={{
@@ -41,7 +30,7 @@ export default function Guidelines() {
                 sm: "2rem",
             },
             marginBottom: "10px",
-        }} id="guidelines" ref={containerRef}>
+        }} id="guidelines">
             <Typography color="primary" component="h1" variant="h1" fontWeight="bold" marginTop="1rem" textAlign="center">
                 Guidelines
             </Typography>
