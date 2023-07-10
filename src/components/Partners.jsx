@@ -20,7 +20,7 @@ function PartnerTile({ title, name, logo, link }) {
                 sm: "500px",
             },
             height: {
-                xs: "300px",
+                xs: "400px",
                 sm: "500px",
             },
             display: "flex",
@@ -34,6 +34,10 @@ function PartnerTile({ title, name, logo, link }) {
                 component="h2" 
                 variant="h2" 
                 textAlign="center" 
+                fontSize={{
+                    xs: "20px",
+                    sm: "28px",
+                }}
                 sx={{
                     width: "100%",
                     paddingTop: "2rem",
@@ -75,7 +79,10 @@ function PartnerTile({ title, name, logo, link }) {
                         }}
                         alt={ name }
                         src={ logo }
-                        maxHeight={"300px"}
+                        maxHeight={{
+                            xs: "200px",
+                            sm: "300px",
+                        }}
                     />
                 </Box>
             </Box>
