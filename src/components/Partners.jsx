@@ -5,8 +5,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import placeholder from "../assets/placeholder.jpg";
 import { useContext, useEffect, useState } from "react";
-// import useElementVisibility from "../hooks/ElementVisibility";
-// import VisibilityContext from "../context/Visibility";
+import useElementVisibility from "../hooks/ElementVisibility";
+import VisibilityContext from "../context/Visibility";
 import econsulateLogo from "../assets/econsulate-logo.png"
 import nwysmLogo from "../assets/nysm-logo.jpg"
 import hackslLogo from "../assets/hacksl-logo.png"
@@ -93,13 +93,13 @@ function PartnerTile({ title, name, logo, link }) {
 
 export default function Partners() {
     // Set visible element context
-    // const [isVisible, setIsVisible] = useState();
-    // const [containerRef] = useElementVisibility(setIsVisible);
-    // const { visibleElement, setVisibleElement } = useContext(VisibilityContext);
+    const [isVisible, setIsVisible] = useState();
+    const [containerRef] = useElementVisibility(setIsVisible);
+    const { visibleElement, setVisibleElement } = useContext(VisibilityContext);
 
-    // useEffect(() => {
-    //     if (isVisible) setVisibleElement("partners");
-    // }, [isVisible])
+    useEffect(() => {
+        if (isVisible) setVisibleElement("partners");
+    }, [isVisible])
 
     return (
         <Box sx={{
@@ -112,7 +112,7 @@ export default function Partners() {
             paddingBottom: "50px",
             marginBottom: "10px",
             background: "#161518",
-        }} id="partners" bgcolor="secondary.main">
+        }} id="partners" bgcolor="secondary.main" ref={containerRef}>
             <Typography component="h1" variant="h1" fontWeight="bold" fontSize={"32px"} marginTop="3rem" marginBottom="3rem" textAlign="center">
                 Official <Typography color="primary" component="span" variant="span">Partners</Typography>
             </Typography>
