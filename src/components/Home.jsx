@@ -37,7 +37,7 @@ export default function Home() {
             marginBottom: "10px",
         }} id="home" ref={containerRef}>
 
-            {/* <ReactParticles /> */}
+            <ReactParticles />
 
             <div style={{
                 width: "100%",
