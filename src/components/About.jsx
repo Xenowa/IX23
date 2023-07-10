@@ -36,12 +36,12 @@ export default function About() {
                 maxWidth: "70rem",
                 margin: "0 auto"
             }} >
-                <iframe
+                {/* <iframe
                     style={{ borderRadius: "1rem", width: matches ? "25rem" : "80%", height: "34rem", border: "1px solid var(--primary)" }}
                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHLzvRBwIbjJiwQM7tpJj7v%2Fvision-OS-Starting-Design%3Ftype%3Ddesign%26node-id%3D3-118%26scaling%3Dcontain%26page-id%3D3%253A114%26starting-point-node-id%3D3%253A118%26mode%3Ddesign"
                     allowfullscreen
                     loading="lazy"
-                />
+                /> */}
 
                 <Typography
                     component="p"
