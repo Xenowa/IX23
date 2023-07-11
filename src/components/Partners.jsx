@@ -142,7 +142,7 @@ export default function Partners() {
                     logo={nwysmLogo} />
 
                 <PartnerTile
-                    title="Official Online Event Partner"
+                    title="Online Event Partner"
                     name="hacksl"
                     link={ "https://hacksl.tech/" }
                     logo={hackslLogo} />
