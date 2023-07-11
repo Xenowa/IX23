@@ -28,8 +28,8 @@ function App() {
           <Guidelines />
           <Schedule />
           <Awards />
-          <Partners />
           <Register />
+          <Partners />
           <Contact />
           <Footer />
         </Box>

@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import placeholder from "../assets/placeholder.jpg";
+import ixbackground from "../assets/IX-bg.jpg"
 import { useContext, useEffect, useState } from "react";
 import useElementVisibility from "../hooks/ElementVisibility";
 import VisibilityContext from "../context/Visibility";
@@ -102,6 +103,7 @@ export default function Partners() {
     }, [isVisible])
 
     return (
+        <>
         <Box sx={{
             minHeight: "100vh",
             display: "flex",
@@ -113,6 +115,14 @@ export default function Partners() {
             marginBottom: "10px",
             background: "#161518",
         }} id="partners" bgcolor="secondary.main" ref={containerRef}>
+
+        <Box sx={{
+            width: "80%",
+            height: "1px",
+            background: "linear-gradient(90deg, rgba(255,255,255,0.03) 0%, rgba(174, 235, 64, 0.7) 50%, rgba(255,255,255,0.03) 100%)",
+            marginTop: "50px",
+        }} />
+
             <Typography component="h1" variant="h1" fontWeight="bold" fontSize={"32px"} marginTop="3rem" marginBottom="3rem" textAlign="center">
                 Official <Typography color="primary" component="span" variant="span">Partners</Typography>
             </Typography>
@@ -139,5 +149,6 @@ export default function Partners() {
             </Box>
             {/* =============== Sponsors END ================== */}
         </Box>
+        </>
     )
 }

@@ -19,6 +19,7 @@ import lahini from "../assets/Lahini.jpg"
 import { useContext, useEffect, useState } from "react";
 import useElementVisibility from "../hooks/ElementVisibility";
 import VisibilityContext from "../context/Visibility";
+import ixbackground from "../assets/IX-bg.jpg"
 
 export default function Contact() {
     // Set visible element context
@@ -40,7 +41,12 @@ export default function Contact() {
             alignItems: "center",
             gap: "1rem",
             bgcolor: "secondary.main",
-            paddingBottom: "1rem"
+            paddingBottom: "1rem",
+            backgroundImage: `url(${ixbackground})`,
+            backgroundAttachment: "fixed",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "100%",
         }} id="contact">
             <Typography component="h1" variant="h1" fontWeight="bold" marginTop="1rem" textAlign="center">
                 Contact <Typography color="primary" component="span" variant="span">Us</Typography>

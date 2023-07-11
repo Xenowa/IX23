@@ -51,11 +51,12 @@ export default function Register() {
             justifyContent: "center",
             alignItems: "center",
             gap: "1rem",
-            backgroundImage: `url(${ixbackground})`,
-            backgroundAttachment: "fixed",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "100%",
+            // backgroundImage: `url(${ixbackground})`,
+            // backgroundAttachment: "fixed",
+            // backgroundRepeat: "no-repeat",
+            // backgroundPosition: "center",
+            // backgroundSize: "100%",
+            background: "#161518",
         }} id="register" ref={containerRef}>
             <Typography color="primary" component="h1" variant="h1" fontWeight="bold" marginTop="1rem" textAlign="center">
                 Register
