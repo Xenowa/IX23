@@ -58,7 +58,7 @@ export default function Register() {
             // backgroundSize: "100%",
             background: "#161518",
         }} id="register" ref={containerRef}>
-            <Typography color="primary" component="h1" variant="h1" fontWeight="bold" marginTop="1rem" textAlign="center">
+            <Typography color="primary" component="h1" variant="h1" fontWeight="bold" marginTop="3rem" textAlign="center">
                 Register
             </Typography>
             <div id="tripetto"></div>
