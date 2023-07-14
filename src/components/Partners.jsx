@@ -8,9 +8,12 @@ import ixbackground from "../assets/IX-bg.jpg"
 import { useContext, useEffect, useState } from "react";
 import useElementVisibility from "../hooks/ElementVisibility";
 import VisibilityContext from "../context/Visibility";
+
 import econsulateLogo from "../assets/econsulate-logo.png"
 import nwysmLogo from "../assets/nysm-logo.jpg"
 import hackslLogo from "../assets/hacksl-logo.png"
+import dailyMirrorLogo from "../assets/daily-mirror-logo.png"
+import hiLogo from "../assets/hi-logo.jpg"
 
 function PartnerTile({ title, name, logo, link }) {
     return (
@@ -136,10 +139,22 @@ export default function Partners() {
                     logo={econsulateLogo} />
 
                 <PartnerTile
-                    title="Official Digital Media Partner"
+                    title="Digital Media Partner"
+                    name="daily mirror"
+                    link={ "https://www.dailymirror.lk/" }
+                    logo={dailyMirrorLogo} />
+
+                <PartnerTile
+                    title="Digital Media Partner"
                     name="now you see me"
                     link={ "https://www.nysm.lk/" }
                     logo={nwysmLogo} />
+
+                <PartnerTile
+                    title="Digital Media Partner"
+                    name="Hi"
+                    link={ "https://www.hi.lk/" }
+                    logo={hiLogo} />
 
                 <PartnerTile
                     title="Online Event Partner"
