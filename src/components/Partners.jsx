@@ -15,82 +15,95 @@ import hackslLogo from "../assets/hacksl-logo.png"
 import dailyMirrorLogo from "../assets/daily-mirror-logo.png"
 import hiLogo from "../assets/hi-logo.jpg"
 
-function PartnerTile({ title, name, logo, link }) {
+function PartnerLogo({ name, logo, link }) {
+    return (
+        <Box 
+            component="a" 
+            href={ link } 
+            target="_blank" 
+            margin="0 2rem" 
+            sx={{ 
+                transition: "translate 300ms ease-in-out", 
+                ":hover": { 
+                    "translate": "0px -5px" 
+                }
+            }}>
+            <Box
+                component="img"
+                sx={{
+                    maxWidth: {
+                        xs: "150px",
+                        sm: "200px"
+                    }
+                }}
+                alt={ name }
+                src={ logo }
+                maxHeight={{
+                    xs: "200px",
+                    sm: "300px",
+                }}
+            />
+        </Box>
+    );
+}
+
+function PartnerSection({ title, children }) {
     return (
         <Box sx={{
+            marginBottom: "20px",
             background: "#1d1c20",
-            width: {
-                xs: "300px",
-                sm: "500px",
-            },
-            height: {
-                xs: "400px",
-                sm: "500px",
-            },
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
             borderRadius: "10px",
             border: "1px solid rgba(255, 255, 255, 0.05)",
-            overflow: "hidden",
-        }}>
+            width: "100%",
+            minHeight: "300px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+        }} id="partners" bgcolor="secondary.main">
+            <Box sx={{
+                width: "100%",
+                padding: "1.8rem",
+                background: "rgba(255,255,255,0.05)",
+                position: "relative",
+                boxSizing: "border-box",
+                marginBottom: "2rem",
+                "&::after": {
+                    content: "''",
+                    position: "absolute",
+                    bottom: "0px",
+                    left: "50%",
+                    width: "80%",
+                    transform: "translateX(-50%)",
+                    height: "1px",
+                    background: "linear-gradient(90deg, rgba(255,255,255,0.03) 0%, rgba(200,200,255, 0.2) 50%, rgba(255,255,255,0.03) 100%)",
+                    boxShadow: "0px 2px 10px rgba(0,0,0,0.6)",
+                },
+            }}>
             <Typography 
-                component="h2" 
-                variant="h2" 
-                textAlign="center" 
-                fontSize={{
-                    xs: "20px",
-                    sm: "28px",
-                }}
-                sx={{
-                    width: "100%",
-                    paddingTop: "2rem",
-                    paddingBottom: "2rem",
-                    background: "rgba(255,255,255,0.05)",
-                    position: "relative",
-                    "&::after": {
-                        content: "''",
-                        position: "absolute",
-                        bottom: "0px",
-                        left: "50%",
-                        width: "80%",
-                        transform: "translateX(-50%)",
-                        height: "1px",
-                        background: "linear-gradient(90deg, rgba(255,255,255,0.03) 0%, rgba(200,200,255, 0.2) 50%, rgba(255,255,255,0.03) 100%)",
-                        boxShadow: "0px 2px 10px rgba(0,0,0,0.6)", 
-                    },
-                }}>
-                    { title }
+                component="h1" 
+                variant="h1" 
+                fontWeight="bold" 
+                fontSize={"24px"} 
+                textAlign="center"
+                >
+                { title }
             </Typography>
+            </Box>
+
+            {/* =============== Sponsors START ================== */}
             <Box sx={{ 
                 display: "flex", 
                 justifyContent: "center", 
                 alignItems: "center",
-                flexWrap: "wrap", 
-                gap: "1rem",
+                flexWrap: "wrap",
                 grow: 1,
+                flexGrow: 1,
                 height: "100%",
-                padding: "3rem",
-            }}>
-                <Box component="a" href={ link } target="_blank" margin="0 2rem" sx={{ transition: "translate 300ms ease-in-out", ":hover": { "translate": "0px -5px" } }}>
-                    <Box
-                        component="img"
-                        sx={{
-                            maxWidth: {
-                                xs: "16rem",
-                                sm: "25rem"
-                            }
-                        }}
-                        alt={ name }
-                        src={ logo }
-                        maxHeight={{
-                            xs: "200px",
-                            sm: "300px",
-                        }}
-                    />
-                </Box>
+                gap: "3rem", 
+                marginBottom: "1rem" }}>
+                { children }
             </Box>
+            {/* =============== Sponsors END ================== */}
         </Box>
     );
 }
@@ -131,36 +144,35 @@ export default function Partners() {
             </Typography>
 
             {/* =============== Sponsors START ================== */}
-            <Box sx={{ display: "flex", justifyContent: "center", flexDirection: "column", gap: "3rem", marginBottom: "1rem" }}>
-                <PartnerTile
-                    title="Official Title Partner"
-                    name="econsulate"
-                    link={ "https://econsulate.net/" }
-                    logo={econsulateLogo} />
+            <Box sx={{ marginBottom: "1rem", padding: "20px" }}>
+                <PartnerSection title="Official Title Partner">
+                    <PartnerLogo
+                        name="econsulate"
+                        link={ "https://econsulate.net/" }
+                        logo={econsulateLogo} />
+                </PartnerSection>
 
-                <PartnerTile
-                    title="Digital Media Partner"
-                    name="daily mirror"
-                    link={ "https://www.dailymirror.lk/" }
-                    logo={dailyMirrorLogo} />
+                <PartnerSection title="Official Digital Media Partners">
+                    <PartnerLogo
+                        name="daily mirror"
+                        link={ "https://www.dailymirror.lk/" }
+                        logo={dailyMirrorLogo} />
+                    <PartnerLogo
+                        name="now you see me"
+                        link={ "https://www.nysm.lk/" }
+                        logo={nwysmLogo} />
+                    <PartnerLogo
+                        name="Hi"
+                        link={ "https://www.hi.lk/" }
+                        logo={hiLogo} />
+                </PartnerSection> 
 
-                <PartnerTile
-                    title="Digital Media Partner"
-                    name="now you see me"
-                    link={ "https://www.nysm.lk/" }
-                    logo={nwysmLogo} />
-
-                <PartnerTile
-                    title="Digital Media Partner"
-                    name="Hi"
-                    link={ "https://www.hi.lk/" }
-                    logo={hiLogo} />
-
-                <PartnerTile
-                    title="Online Event Partner"
-                    name="hacksl"
-                    link={ "https://hacksl.tech/" }
-                    logo={hackslLogo} />
+                <PartnerSection title="Online Event Partner">
+                    <PartnerLogo
+                        name="hacksl"
+                        link={ "https://hacksl.tech/" }
+                        logo={hackslLogo} />
+                </PartnerSection>
             </Box>
             {/* =============== Sponsors END ================== */}
         </Box>
