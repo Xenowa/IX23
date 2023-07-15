@@ -154,9 +154,9 @@ export default function Dashboard() {
                 <Divider orientation="vertical" sx={{ bgcolor: desktopNavDividerColor }} />
                 <BottomNavigationAction LinkComponent="a" href="#awards" label="Awards" icon={<EmojiEventsIcon />} />
                 <Divider orientation="vertical" sx={{ bgcolor: desktopNavDividerColor }} />
-                <BottomNavigationAction LinkComponent="a" href="#partners" label="Partners" icon={<GroupsIcon />} />
-                <Divider orientation="vertical" sx={{ bgcolor: desktopNavDividerColor }} />
                 <BottomNavigationAction LinkComponent="a" href="#register" label="Register" icon={<SendIcon />} />
+                <Divider orientation="vertical" sx={{ bgcolor: desktopNavDividerColor }} />
+                <BottomNavigationAction LinkComponent="a" href="#partners" label="Partners" icon={<GroupsIcon />} />
                 <Divider orientation="vertical" sx={{ bgcolor: desktopNavDividerColor }} />
                 <BottomNavigationAction LinkComponent="a" href="#contact" label="Contact" icon={<PermPhoneMsgIcon />} />
             </BottomNavigation>
