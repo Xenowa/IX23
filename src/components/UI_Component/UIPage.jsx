@@ -32,7 +32,7 @@ export default function UIPage() {
                     margin: "10rem 0",
                 }} />
 
-                <Button size="large" variant="contained" color="primary" component="a" href="https://drive.google.com/file/d/1e-XNsuZYOSYXmH_EGyYhzSnSGjvzVUXk/view?usp=sharing" target='_blank'>
+                <Button size="large" variant="contained" color="primary" component="a" href="https://drive.google.com/drive/folders/1V6B0K-O8ogzzTbyh4QGTS25NNvdtojPE?usp=sharing" target='_blank'>
                     Download Booklet
                 </Button>
             </Container>
