@@ -87,7 +87,21 @@ export default function Schedule() {
                 <TimelineEvent
                     heading={heading}
                     title={"Workshop 1"}
+                    date={"July 27th"}
+                    icon={<HandymanIcon sx={iconSxProp} fontSize="medium" />}
+                />
+
+                <TimelineEvent
+                    heading={heading}
+                    title={"Workshop 2"}
                     date={"July 29th"}
+                    icon={<HandymanIcon sx={iconSxProp} fontSize="medium" />}
+                />
+
+                <TimelineEvent
+                    heading={heading}
+                    title={"Workshop 3"}
+                    date={"July 30th"}
                     icon={<HandymanIcon sx={iconSxProp} fontSize="medium" />}
                 />
 
@@ -100,13 +114,6 @@ export default function Schedule() {
 
                 <TimelineEvent
                     heading={heading}
-                    title={"Workshop 2"}
-                    date={"Aug 9th"}
-                    icon={<HandymanIcon sx={iconSxProp} fontSize="medium" />}
-                />
-
-                <TimelineEvent
-                    heading={heading}
                     title={"Announcement of Finalists"}
                     date={"Aug 13th"}
                     icon={<AutoAwesomeIcon sx={iconSxProp} fontSize="medium" />}
@@ -115,7 +122,7 @@ export default function Schedule() {
                 <TimelineEvent
                     heading={heading}
                     title={"Designathon"}
-                    date={"Aug 19th"}
+                    date={"Aug 19th and Aug 20th"}
                     icon={<DrawIcon sx={iconSxProp} fontSize="medium" />}
                 />
 
