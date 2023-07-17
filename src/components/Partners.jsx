@@ -158,14 +158,17 @@ export default function Partners() {
                         link={ "https://www.dailymirror.lk/" }
                         logo={dailyMirrorLogo} />
                     <PartnerLogo
-                        name="now you see me"
-                        link={ "https://www.nysm.lk/" }
-                        logo={nwysmLogo} />
-                    <PartnerLogo
                         name="Hi"
                         link={ "https://www.hi.lk/" }
                         logo={hiLogo} />
                 </PartnerSection> 
+
+                <PartnerSection title="Photographic Partner">
+                    <PartnerLogo
+                        name="now you see me"
+                        link={ "https://www.nysm.lk/" }
+                        logo={nwysmLogo} />
+                </PartnerSection>
 
                 <PartnerSection title="Online Event Partner">
                     <PartnerLogo
