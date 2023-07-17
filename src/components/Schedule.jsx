@@ -73,14 +73,14 @@ export default function Schedule() {
                 <TimelineEvent
                     heading={heading}
                     title={"Awareness Session"}
-                    date={"July 25th"}
+                    date={"July 23rd"}
                     icon={<CoPresentIcon sx={iconSxProp} fontSize="medium" />}
                 />
 
                 <TimelineEvent
                     heading={heading}
                     title={"Initial Design Submission Opening"}
-                    date={"July 26th"}
+                    date={"July 24th"}
                     icon={<EditIcon sx={iconSxProp} fontSize="medium" />}
                 />
 
@@ -108,7 +108,7 @@ export default function Schedule() {
                 <TimelineEvent
                     heading={heading}
                     title={"Initial Design Submission Closing"}
-                    date={"Aug 2nd"}
+                    date={"Aug 1st"}
                     icon={<EditOffIcon sx={iconSxProp} fontSize="medium" />}
                 />
 
