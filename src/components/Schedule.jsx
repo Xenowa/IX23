@@ -66,7 +66,7 @@ export default function Schedule() {
                 <TimelineEvent
                     heading={heading}
                     title={"Closing of Registrations"}
-                    date={"July 22nd"}
+                    date={"July 18th"}
                     icon={<CancelScheduleSendIcon sx={iconSxProp} fontSize="medium" />}
                 />
 
