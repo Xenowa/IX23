@@ -14,6 +14,8 @@ import nwysmLogo from "../assets/nysm-logo.jpg"
 import hackslLogo from "../assets/hacksl-logo.png"
 import dailyMirrorLogo from "../assets/daily-mirror-logo.png"
 import hiLogo from "../assets/hi-logo.jpg"
+import nintyNineXLogo from "../assets/99x-logo.png"
+import ifsLogo from "../assets/ifs-logo.png"
 
 function PartnerLogo({ name, logo, link }) {
     return (
@@ -162,6 +164,17 @@ export default function Partners() {
                         link={ "https://www.hi.lk/" }
                         logo={hiLogo} />
                 </PartnerSection> 
+
+                <PartnerSection title="Knowledge Partner">
+                    <PartnerLogo
+                        name="99x"
+                        link={ "https://99x.io/" }
+                        logo={nintyNineXLogo} />
+                    <PartnerLogo
+                        name="IFS"
+                        link={ "https://www.ifs.com/" }
+                        logo={ifsLogo} />
+                </PartnerSection>
 
                 <PartnerSection title="Photographic Partner">
                     <PartnerLogo
