@@ -154,6 +154,17 @@ export default function Partners() {
                         logo={econsulateLogo} />
                 </PartnerSection>
 
+                <PartnerSection title="Official Knowledge Partners">
+                    <PartnerLogo
+                        name="99x"
+                        link={ "https://99x.io/" }
+                        logo={nintyNineXLogo} />
+                    <PartnerLogo
+                        name="IFS"
+                        link={ "https://www.ifs.com/" }
+                        logo={ifsLogo} />
+                </PartnerSection>
+
                 <PartnerSection title="Official Digital Media Partners">
                     <PartnerLogo
                         name="daily mirror"
@@ -164,17 +175,6 @@ export default function Partners() {
                         link={ "https://www.hi.lk/" }
                         logo={hiLogo} />
                 </PartnerSection> 
-
-                <PartnerSection title="Knowledge Partner">
-                    <PartnerLogo
-                        name="99x"
-                        link={ "https://99x.io/" }
-                        logo={nintyNineXLogo} />
-                    <PartnerLogo
-                        name="IFS"
-                        link={ "https://www.ifs.com/" }
-                        logo={ifsLogo} />
-                </PartnerSection>
 
                 <PartnerSection title="Photographic Partner">
                     <PartnerLogo
