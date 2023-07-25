@@ -16,6 +16,7 @@ import dailyMirrorLogo from "../assets/daily-mirror-logo.png"
 import hiLogo from "../assets/hi-logo.jpg"
 import nintyNineXLogo from "../assets/99x-logo.png"
 import ifsLogo from "../assets/ifs-logo.png"
+import wavenetLogo from "../assets/wavenet-logo.png"
 
 function PartnerLogo({ name, logo, link }) {
     return (
@@ -191,6 +192,10 @@ export default function Partners() {
                             name="IFS"
                             link={"https://www.ifs.com/"}
                             logo={ifsLogo} />
+                        <PartnerLogo
+                            name="wavenet"
+                            link={"https://www.globalwavenet.com/"}
+                            logo={wavenetLogo} />
                     </PartnerSection>
 
                     <PartnerSection title="Official Digital Media Partners">
