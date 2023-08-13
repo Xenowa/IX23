@@ -7,7 +7,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
-import { QuestionMark } from "@mui/icons-material";
+import { Coffee, ConnectWithoutContact, DinnerDining, Diversity3, Draw, EditOff, EmojiEvents, Handshake, KebabDining, Light, LightMode, Person4, QueryBuilder, RamenDining, Title, Verified, WavingHand } from "@mui/icons-material";
 import { Button } from "@mui/material";
 
 export default function EventTimeline() {
@@ -65,8 +65,8 @@ export default function EventTimeline() {
         title: "Delegate Reception Verification",
         date: "Aug 19 | 8:30 AM - 9:00 AM",
         active: true,
-        activeIcon: <QuestionMark sx={{ color: "secondary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />,
-        deactiveIcon: <QuestionMark sx={{ color: "primary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />
+        activeIcon: <Verified sx={{ color: "secondary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />,
+        deactiveIcon: <Verified sx={{ color: "primary.main", padding: "1rem", borderRadius: "20rem", border: "1px solid var(--primary)" }} fontSize="medium" />
     }
 
     const Content = ({ heading }) => {
@@ -90,140 +90,133 @@ export default function EventTimeline() {
                     heading={heading}
                     title={"Welcome"}
                     date={"Aug 19 | 9:00 AM - 10:00 AM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<WavingHand sx={iconSxProp} fontSize="medium" />}
                 />
 
                 <TimelineEvent
                     heading={heading}
                     title={"24hr Designathon Starts"}
                     date={"Aug 19 | 10:00 AM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<Draw sx={iconSxProp} fontSize="medium" />}
                 />
 
                 {/* <TimelineEvent
                     heading={heading}
                     title={"Lunch distribution"}
                     date={"Aug 19 | 12:30 PM - 1:00 PM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<LunchDining sx={iconSxProp} fontSize="medium" />}
                 /> */}
 
                 <TimelineEvent
                     heading={heading}
                     title={"Tea time snack"}
-                    date={"Aug 19 | 4:00 PM - 4:30 PM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    date={"Aug 19 | 5:00 PM - 5:30 PM"}
+                    icon={<Coffee sx={iconSxProp} fontSize="medium" />}
                 />
 
                 {/* <TimelineEvent
                     heading={heading}
                     title={"Entertainment break"}
                     date={"Aug 19 | 7:30 PM - 8:00 PM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<VideogameAsset sx={iconSxProp} fontSize="medium" />}
                 /> */}
 
                 <TimelineEvent
                     heading={heading}
                     title={"Dinner distribution"}
-                    date={"Aug 19 | 8:00 PM - 8:30 PM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    date={"Aug 19 | 8:30 PM - 9:30 PM"}
+                    icon={<RamenDining sx={iconSxProp} fontSize="medium" />}
                 />
 
                 {/* <TimelineEvent
                     heading={heading}
                     title={"Coffee break"}
                     date={"Aug 20 | 12:00 AM - 12:30 AM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<Coffee sx={iconSxProp} fontSize="medium" />}
                 /> */}
 
                 <TimelineEvent
                     heading={heading}
                     title={"Midnight snack"}
                     date={"Aug 20 | 2:00 AM - 2:30 AM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<KebabDining sx={iconSxProp} fontSize="medium" />}
                 />
 
                 <TimelineEvent
                     heading={heading}
                     title={"Breakfast"}
-                    date={"Aug 20 | 7:00 AM - 7:30 AM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    date={"Aug 20 | 7:30 AM - 8:00 AM"}
+                    icon={<DinnerDining sx={iconSxProp} fontSize="medium" />}
                 />
 
                 <TimelineEvent
                     heading={heading}
                     title={"24hr Designathon Ends"}
                     date={"Aug 20 | 10:00 AM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<EditOff sx={iconSxProp} fontSize="medium" />}
                 />
 
                 <TimelineEvent
                     heading={heading}
-                    title={"Break + Preparation time"}
+                    title={"Lunch + Preparation time"}
                     date={"Aug 20 | 10:00 AM - 12:00 AM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<QueryBuilder sx={iconSxProp} fontSize="medium" />}
                 />
 
                 <TimelineEvent
                     heading={heading}
                     title={"Team presentations"}
                     date={"Aug 20 | 12:00 AM - 2:00 AM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<ConnectWithoutContact sx={iconSxProp} fontSize="medium" />}
                 />
 
                 <TimelineEvent
                     heading={heading}
                     title={"Award Ceremony Welcome"}
                     date={"Aug 20 | 2:30 PM - 2:40 PM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<Handshake sx={iconSxProp} fontSize="medium" />}
                 />
 
                 <TimelineEvent
                     heading={heading}
                     title={"Lighting the oil lamp"}
-                    date={"Aug 20 | 2:40 PM - 2:50 PM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
-                />
-
-                <TimelineEvent
-                    heading={heading}
-                    title={"Advisor speech"}
-                    date={"Aug 20 | 2:50 PM - 3:00 PM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    date={"Aug 20 | 2:40 PM - 3:00 PM"}
+                    icon={<LightMode sx={iconSxProp} fontSize="medium" />}
                 />
 
                 <TimelineEvent
                     heading={heading}
                     title={"Title partner addressing the event"}
                     date={"Aug 20 | 3:00 PM - 3:25 PM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<Title sx={iconSxProp} fontSize="medium" />}
                 />
 
                 <TimelineEvent
                     heading={heading}
                     title={"IX 23 Chairperson Addressing the event"}
                     date={"Aug 20 | 3:25 PM - 3:35 PM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<Person4 sx={iconSxProp} fontSize="medium" />}
                 />
 
                 <TimelineEvent
                     heading={heading}
                     title={"Appreciating the judges"}
                     date={"Aug 20 | 3:35 PM - 3:45 PM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<Diversity3 sx={iconSxProp} fontSize="medium" />}
                 />
 
                 <TimelineEvent
                     heading={heading}
                     title={"Awarding ceremony"}
                     date={"Aug 20 | 3:45 PM - 4:00 PM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<EmojiEvents sx={iconSxProp} fontSize="medium" />}
                 />
 
                 <TimelineEvent
                     heading={heading}
                     title={"Vote of thanks"}
                     date={"Aug 20 | 4:00 PM - 4:10 PM"}
-                    icon={<QuestionMark sx={iconSxProp} fontSize="medium" />}
+                    icon={<Light sx={iconSxProp} fontSize="medium" />}
                 />
             </div>
         )
