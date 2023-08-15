@@ -110,7 +110,7 @@ export default function EventTimeline() {
                 <TimelineEvent
                     heading={heading}
                     title={"Tea time snack"}
-                    date={"Aug 19 | 5:00 PM - 5:30 PM"}
+                    date={"Aug 19 | 4:30 PM - 5:00 PM"}
                     icon={<Coffee sx={iconSxProp} fontSize="medium" />}
                 />
 
