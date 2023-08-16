@@ -29,17 +29,6 @@ export default function FinalHome() {
 
             <ReactParticles />
 
-            <div style={{
-                width: "100%",
-                height: "100vh",
-                background: "rgba(0, 0, 0, 60%)",
-                position: "absolute",
-                top: "0",
-                left: "0",
-                zIndex: "1",
-                backdropFilter: "blur(1px)",
-            }}></div>
-
             <img
                 src={IXIcon} alt="Logo"
                 style={{
