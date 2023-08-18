@@ -45,7 +45,13 @@ export default function Resources() {
                             </Typography>
                         </CardContent>
                         <CardActions sx={{ marginBottom: "2rem" }}>
-                            <Button size="large" variant="contained" color="primary" component="a" href="#" target='_blank'>
+                            <Button
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                                component="a"
+                                href="https://drive.google.com/file/d/10ccfhfuO-BbgdsfmSU0369s4Dezlhg2_/view?usp=sharing"
+                                target='_blank'>
                                 Read the Guidelines
                             </Button>
                         </CardActions>
@@ -73,7 +79,13 @@ export default function Resources() {
                             </Typography>
                         </CardContent>
                         <CardActions sx={{ marginBottom: "2rem" }}>
-                            <Button size="large" variant="contained" color="primary" component="a" href="#" target='_blank'>
+                            <Button
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                                component="a"
+                                href="https://drive.google.com/file/d/1fGL8oPxmQ3UqPRMcl8Jxgry9Aw0PF7TW/view?usp=sharing"
+                                target='_blank'>
                                 Go to Task
                             </Button>
                         </CardActions>
@@ -102,7 +114,13 @@ export default function Resources() {
                             </Typography>
                         </CardContent>
                         <CardActions sx={{ marginBottom: "2rem" }}>
-                            <Button size="large" variant="contained" color="primary" component="a" href="#" target='_blank'>
+                            <Button
+                                size="large"
+                                variant="contained"
+                                color="primary"
+                                component="a"
+                                href="https://www.figma.com/community/file/1274429787347533050/IX-23-Round-2-Submission-Template"
+                                target='_blank'>
                                 Access the Template
                             </Button>
                         </CardActions>

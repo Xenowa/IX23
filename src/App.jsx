@@ -9,8 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        {/* CHANGE THE ROUTE TO: /final after finalizing timelines*/}
-        <Route path="/finale-998710293821" element={<Finalepage />} />
+        <Route path="/finale" element={<Finalepage />} />
         <Route path="/*" element={<Errorpage />} />
       </Routes>
     </BrowserRouter>

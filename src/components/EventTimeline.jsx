@@ -8,7 +8,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import { Coffee, ConnectWithoutContact, DinnerDining, Diversity3, Draw, EditOff, EmojiEvents, Handshake, KebabDining, Light, LightMode, LunchDining, Person4, QueryBuilder, RamenDining, RecordVoiceOver, Restaurant, Title, Verified, WavingHand } from "@mui/icons-material";
-import { Button } from "@mui/material";
+import { Button, Stack } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
 
 export default function EventTimeline() {
@@ -487,8 +487,7 @@ export default function EventTimeline() {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            gap: "1rem",
-            marginBottom: "10px",
+            gap: "1rem"
         }} id="timeline" bgcolor="secondary.main">
             <Typography color="primary" component="h1" variant="h1" fontWeight="bold" marginTop="1rem" textAlign="center">Schedule</Typography>
 
@@ -501,19 +500,34 @@ export default function EventTimeline() {
                 <Content heading="h6" />
             </Timeline>
 
-            <Button
-                component="a"
-                sx={{
-                    fontSize: "30px",
-                    backdropFilter: "blur(10px)",
-                    zIndex: "2",
-                    marginBottom: "2rem"
-                }}
-                variant="outlined"
-                color="primary"
-                href="#rules">
-                △
-            </Button>
+            <Stack direction="row" gap="1rem">
+                <Button
+                    component="a"
+                    sx={{
+                        fontSize: "30px",
+                        backdropFilter: "blur(10px)",
+                        zIndex: "2",
+                        marginBottom: "2rem"
+                    }}
+                    variant="outlined"
+                    color="primary"
+                    href="#submission">
+                    ▽
+                </Button>
+                <Button
+                    component="a"
+                    sx={{
+                        fontSize: "30px",
+                        backdropFilter: "blur(10px)",
+                        zIndex: "2",
+                        marginBottom: "2rem"
+                    }}
+                    variant="outlined"
+                    color="primary"
+                    href="#rules">
+                    △
+                </Button>
+            </Stack>
         </Box>
     )
 }

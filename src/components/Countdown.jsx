@@ -8,7 +8,7 @@ import { Box } from '@mui/material';
 import { useEffect, useState } from 'react';
 
 export default function Countdown() {
-    const [visibility, setVisibility] = useState(false)
+    const [visibility, setVisibility] = useState(true)
 
     // ===========
     // Timer logic
